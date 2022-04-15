@@ -1,0 +1,77 @@
+body,ul,li,h1{
+    margin: 0;
+    list-style: none;
+}
+*{
+    box-sizing: border-box;
+}
+.wrapper{
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(90deg, red 30%,black 30%);
+}
+.nav{
+    display: flex;
+}
+.container{
+    max-width: 1700px;
+    margin: 0 auto;
+}
+.nav__list{
+    color: white;
+    display: flex;
+}
+.nav__item{
+    margin: 0 72px;
+}
+.header{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.search{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    margin-left: 54px;
+    position: relative;
+    width: 190px;
+}
+.input__search{
+    color: white;
+    outline: 0;
+    border: none;
+    background: black;
+    padding-bottom: 8px;
+    width: 100%;
+    padding-left: 44px;
+}
+.search::before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    display: block;
+    background-image: url(img/fi-rr-search\ 1.png);
+    background-position: center;
+    background-size: contain;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo__img{
+    width: 60px;
+    height: 60px;
+}
+.lancer{
+    font-weight: 350;
+}
+.lancer__img{
+    width: 1406px;
+    height: 711px;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
