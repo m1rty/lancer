@@ -6,6 +6,7 @@ body,ul,li,h1{
     box-sizing: border-box;
 }
 .wrapper{
+    font-family: 'Heebo', sans-serif;
     height: 100vh;
     overflow: hidden;
     background: linear-gradient(90deg, red 30%,black 30%);
@@ -16,7 +17,9 @@ body,ul,li,h1{
 .container{
     max-width: 1700px;
     margin: 0 auto;
+    padding: 0 15px;
 }
+
 .nav__list{
     color: white;
     display: flex;
@@ -63,9 +66,15 @@ body,ul,li,h1{
     height: 60px;
 }
 .lancer{
-    font-weight: 350;
+    margin: 0;
+    z-index: 3;
+    font-weight: 550;
+    font-size: 350px;
+    color: white;
 }
-.lancer__img{
+.lancer__img-wrap{
+    z-index: 4;
+    position: absolute;
     width: 1406px;
     height: 711px;
 }
@@ -74,4 +83,33 @@ body,ul,li,h1{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+.main__video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 29.99%;
+    height: 23%;
+    background: #FF3232;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.video__text{
+    margin-left: 25px;
+    font-size: 20px;
+    font-weight: 550;
+}
+.ad{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+}
+.ad__text{
+    margin: 0 0 48px 0;
+    color: red;
+    font-size: 25px;
+    font-weight: 550;
 }
